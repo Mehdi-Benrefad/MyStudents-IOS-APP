@@ -10,7 +10,6 @@ import UIKit
 
 class SecondViewController: UIViewController , UIPickerViewDelegate , UIPickerViewDataSource{
 
-    
     @IBOutlet weak var classPickerView: UIPickerView!
     //var students = studentsInSections
     @IBOutlet weak var fname: UITextField!

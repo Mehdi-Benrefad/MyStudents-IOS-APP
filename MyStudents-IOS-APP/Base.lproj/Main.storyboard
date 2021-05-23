@@ -66,7 +66,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mRu-Am-CHJ" kind="show" id="NfS-hc-k4c"/>
+                                    <segue destination="mRu-Am-CHJ" kind="show" id="fcg-Pl-mjH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -166,8 +166,8 @@
                                 <rect key="frame" x="0.0" y="394" width="414" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="mRu-Am-CHJ" id="iZ9-Vn-E6K"/>
-                                    <outlet property="delegate" destination="mRu-Am-CHJ" id="1Ao-xu-7XS"/>
+                                    <outlet property="dataSource" destination="mRu-Am-CHJ" id="6SB-xi-szc"/>
+                                    <outlet property="delegate" destination="mRu-Am-CHJ" id="TQb-b3-Z7O"/>
                                 </connections>
                             </pickerView>
                         </subviews>
@@ -176,8 +176,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="G9K-w4-alm"/>
                     <connections>
-                        <outlet property="Class" destination="nai-k5-by3" id="X5T-qM-PPE"/>
-                        <outlet property="classPickerView" destination="nai-k5-by3" id="e8a-aU-Pj9"/>
+                        <outlet property="classPickerView" destination="nai-k5-by3" id="5zz-m0-Sna"/>
                         <outlet property="fname" destination="ASi-8u-G0q" id="bjp-wm-tZX"/>
                         <outlet property="lname" destination="jlD-8i-h0Y" id="dTs-WF-t7c"/>
                     </connections>
