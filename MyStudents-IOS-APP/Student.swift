@@ -13,3 +13,29 @@ struct student{
     var lastname = String()
     var section = Int()
 }
+
+var studentsInSections = [
+    [student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1)],
+    
+    [student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1)],
+    
+    [student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1)],
+    
+    [student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:1)]
+]

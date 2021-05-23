@@ -11,9 +11,7 @@ import UIKit
 class ViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
    
     @IBOutlet weak var studentsTableView: UITableView!
-    var students = [
-        ["Mehdi","Ali","Karim","Samir","Kamal"],["Mehdi","Ali","Karim","Samir","Kamal"],["Mehdi","Ali","Karim","Samir","Kamal"],["Mehdi","Ali","Karim","Samir","Kamal"],["Mehdi","Ali","Karim","Samir","Kamal"],["Mehdi","Ali","Karim","Samir","Kamal"]
-    ]
+    var students = studentsInSections
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +21,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         studentsTableView.reloadData()
+        students = studentsInSections
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -42,9 +41,9 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
         let student = students[indexPath.section]
-        cell.textLabel?.text = student[indexPath.row]
-        cell.detailTextLabel?.text = "section" + String(indexPath.section)
-        
+        cell.textLabel?.text = student[indexPath.row].firstname
+        cell.detailTextLabel?.text = student[indexPath.row].lastname
+        cell.imageView?.image = UIImage(named: "profile")
         return cell
        
     }
@@ -55,7 +54,8 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
-            students[indexPath.section].remove(at: indexPath.row)
+            studentsInSections[indexPath.section].remove(at: indexPath.row)
+            students = studentsInSections
             studentsTableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }

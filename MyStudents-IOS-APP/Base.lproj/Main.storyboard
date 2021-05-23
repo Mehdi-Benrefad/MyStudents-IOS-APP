@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="95.380434782608702"/>
         </scene>
-        <!--View Controller2-->
+        <!--Second View Controller-->
         <scene sceneID="ZYk-At-HWR">
             <objects>
-                <viewController id="mRu-Am-CHJ" customClass="ViewController2" customModule="MyStudents_IOS_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mRu-Am-CHJ" customClass="SecondViewController" customModule="MyStudents_IOS_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GUK-sw-9vj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,6 +130,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addStudent:" destination="mRu-Am-CHJ" eventType="touchUpInside" id="8Dj-Mo-GD6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0F-if-SHD">
                                 <rect key="frame" x="72" y="166" width="127" height="21"/>
@@ -138,8 +141,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Classe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-EQ-T58">
-                                <rect key="frame" x="71" y="365" width="51" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-EQ-T58">
+                                <rect key="frame" x="71" y="365" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -162,12 +165,22 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nai-k5-by3">
                                 <rect key="frame" x="0.0" y="394" width="414" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mRu-Am-CHJ" id="iZ9-Vn-E6K"/>
+                                    <outlet property="delegate" destination="mRu-Am-CHJ" id="1Ao-xu-7XS"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VIC-dK-ibk"/>
                     </view>
                     <navigationItem key="navigationItem" id="G9K-w4-alm"/>
+                    <connections>
+                        <outlet property="Class" destination="nai-k5-by3" id="X5T-qM-PPE"/>
+                        <outlet property="classPickerView" destination="nai-k5-by3" id="e8a-aU-Pj9"/>
+                        <outlet property="fname" destination="ASi-8u-G0q" id="bjp-wm-tZX"/>
+                        <outlet property="lname" destination="jlD-8i-h0Y" id="dTs-WF-t7c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXa-J5-0Fe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
