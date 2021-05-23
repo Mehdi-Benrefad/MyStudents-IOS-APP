@@ -70,13 +70,13 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     //edit a student
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var studentToEdit = studentsInSections[indexPath.section][indexPath.row]
-        var alertToEdit = UIAlertController(title: "Edit Student", message: "Enter the new fiestname and the new lastname", preferredStyle:.alert)
+        let alertToEdit = UIAlertController(title: "Edit Student", message: "Enter the new fiestname and the new lastname", preferredStyle:.alert)
         alertToEdit.addTextField()
         alertToEdit.addTextField()
         
         //recuperation
-        var nom = alertToEdit.textFields![0]
-        var prenom = alertToEdit.textFields![1]
+        let nom = alertToEdit.textFields![0]
+        let prenom = alertToEdit.textFields![1]
         
         //remplir les champs par les anciennes valeurs
         nom.text = studentToEdit.firstname
@@ -94,7 +94,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
             studentsInSections[indexPath.section][indexPath.row].lastname = studentToEdit.lastname
 
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! UIViewController
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController")
             newViewController.modalPresentationStyle = .fullScreen
             self.present(newViewController, animated: true, completion: nil)
             
