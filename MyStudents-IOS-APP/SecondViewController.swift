@@ -44,8 +44,20 @@ class SecondViewController: UIViewController , UIPickerViewDelegate , UIPickerVi
     
     
     @IBAction func addStudent(_ sender: Any) {
+        
+        let stud = student(firstname: fname.text ?? "", lastname: lname.text ?? "", section: classPickerView.selectedRow(inComponent: 0))
+        
         for i in 0..<studentsInSections.count   {
-            
+            if classPickerView.selectedRow(inComponent: 0) == i{
+                studentsInSections[i].append(stud)
+            }
         }
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! UIViewController
+        newViewController.modalPresentationStyle = .fullScreen
+        self.present(newViewController, animated: true, completion: nil)
+        print(studentsInSections)
     }
+    
+    
 }

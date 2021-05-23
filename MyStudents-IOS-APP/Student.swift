@@ -21,21 +21,21 @@ var studentsInSections = [
      student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
      student(firstname:"Mehdi", lastname:"Benrefad" , section:1)],
     
-    [student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1)],
+    [student(firstname:"Mehdi", lastname:"Benrefad" , section:2),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:2),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:2),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:2),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:2)],
     
-    [student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1)],
+    [student(firstname:"Mehdi", lastname:"Benrefad" , section:3),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:3),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:3),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:3),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:3)],
     
-    [student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
-     student(firstname:"Mehdi", lastname:"Benrefad" , section:1)]
+    [student(firstname:"Mehdi", lastname:"Benrefad" , section:4),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:4),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:4),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:4),
+     student(firstname:"Mehdi", lastname:"Benrefad" , section:4)]
 ]

@@ -15,13 +15,16 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        students = studentsInSections
+        studentsTableView.reloadData()
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        studentsTableView.reloadData()
         students = studentsInSections
+        studentsTableView.reloadData()
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
