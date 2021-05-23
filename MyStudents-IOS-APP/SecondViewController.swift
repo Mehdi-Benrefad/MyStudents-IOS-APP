@@ -68,11 +68,13 @@ class SecondViewController: UIViewController , UIPickerViewDelegate , UIPickerVi
                 studentsInSections[i].append(stud)
             }
         }
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController")
+        
         newViewController.modalPresentationStyle = .fullScreen
         self.present(newViewController, animated: true, completion: nil)
-        //print(studentsInSections)
+
     }
     
     
