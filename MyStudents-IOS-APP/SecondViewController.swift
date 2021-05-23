@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController , UIPickerViewDelegate , UIPickerViewDataSource{
+class SecondViewController: UIViewController , UIPickerViewDelegate , UIPickerViewDataSource , UITextFieldDelegate {
 
     @IBOutlet weak var classPickerView: UIPickerView!
     //var students = studentsInSections
@@ -23,6 +23,22 @@ class SecondViewController: UIViewController , UIPickerViewDelegate , UIPickerVi
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
+    //Gerer la disparition du clavier
+    @IBAction func disparitionClavier(_ sender: Any) {
+        fname.resignFirstResponder()
+        lname.resignFirstResponder()
+    }
+    
+    //ajouter un bouton au clavier
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        fname.resignFirstResponder()
+        lname.resignFirstResponder()
+        return true
+    }
+    
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -56,7 +72,7 @@ class SecondViewController: UIViewController , UIPickerViewDelegate , UIPickerVi
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! UIViewController
         newViewController.modalPresentationStyle = .fullScreen
         self.present(newViewController, animated: true, completion: nil)
-        print(studentsInSections)
+        //print(studentsInSections)
     }
     
     
