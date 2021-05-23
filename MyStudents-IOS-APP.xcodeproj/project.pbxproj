@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F18CC1F265A5D9D004CC64A /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18CC1E265A5D9D004CC64A /* ViewController2.swift */; };
+		4F18CC21265A61C5004CC64A /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18CC20265A61C5004CC64A /* Student.swift */; };
 		4FC4D7292657ED8900012CA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4D7282657ED8900012CA7 /* AppDelegate.swift */; };
 		4FC4D72B2657ED8900012CA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4D72A2657ED8900012CA7 /* SceneDelegate.swift */; };
 		4FC4D72D2657ED8900012CA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4D72C2657ED8900012CA7 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F18CC1E265A5D9D004CC64A /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		4F18CC20265A61C5004CC64A /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		4FC4D7252657ED8900012CA7 /* MyStudents-IOS-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyStudents-IOS-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC4D7282657ED8900012CA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC4D72A2657ED8900012CA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,7 @@
 		4FC4D71C2657ED8900012CA7 = {
 			isa = PBXGroup;
 			children = (
+				4F18CC1E265A5D9D004CC64A /* ViewController2.swift */,
 				4FC4D7272657ED8900012CA7 /* MyStudents-IOS-APP */,
 				4FC4D7262657ED8900012CA7 /* Products */,
 			);
@@ -60,6 +65,7 @@
 			children = (
 				4FC4D7282657ED8900012CA7 /* AppDelegate.swift */,
 				4FC4D72A2657ED8900012CA7 /* SceneDelegate.swift */,
+				4F18CC20265A61C5004CC64A /* Student.swift */,
 				4FC4D72C2657ED8900012CA7 /* ViewController.swift */,
 				4FC4D72E2657ED8900012CA7 /* Main.storyboard */,
 				4FC4D7342657EDA300012CA7 /* Assets.xcassets */,
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F18CC1F265A5D9D004CC64A /* ViewController2.swift in Sources */,
+				4F18CC21265A61C5004CC64A /* Student.swift in Sources */,
 				4FC4D72D2657ED8900012CA7 /* ViewController.swift in Sources */,
 				4FC4D7332657ED8900012CA7 /* MyStudents_IOS_APP.xcdatamodeld in Sources */,
 				4FC4D7292657ED8900012CA7 /* AppDelegate.swift in Sources */,
