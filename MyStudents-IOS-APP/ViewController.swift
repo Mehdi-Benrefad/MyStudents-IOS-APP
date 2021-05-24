@@ -44,11 +44,15 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as? studentTableViewCell else {
+            return UITableViewCell()
+        }
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
         let student = students[indexPath.section]
-        cell.textLabel?.text = student[indexPath.row].firstname
-        cell.detailTextLabel?.text = student[indexPath.row].lastname
-        cell.imageView?.image = UIImage(named: "profile")
+        cell.configure(withIcon: "Profile", title: student[indexPath.row].firstname, subtitle: student[indexPath.row].lastname)
+        //cell.textLabel?.text = student[indexPath.row].firstname
+        //cell.detailTextLabel?.text = student[indexPath.row].lastname
+        //cell.imageView?.image = UIImage(named: "Profile")
         return cell
     }
     
