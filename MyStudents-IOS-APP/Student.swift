@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct student{
+struct student : Codable{
     var firstname = String()
     var lastname = String()
     var section = Int()
 }
 
-var studentsInSections = [
+var studentsInSections : [[student]] = [
     [student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
      student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
      student(firstname:"Mehdi", lastname:"Benrefad" , section:1),
@@ -39,3 +39,32 @@ var studentsInSections = [
      student(firstname:"Mehdi", lastname:"Benrefad" , section:4),
      student(firstname:"Mehdi", lastname:"Benrefad" , section:4)]
 ]
+
+
+
+var first : [String] {
+    get{
+        return UserDefaults.standard.object(forKey: "studentfirst")as? [String] ?? []
+    }
+    set{
+        UserDefaults.standard.set(first , forKey: "studentfirst")
+    }
+}
+
+var last : [String]  {
+    get{
+        return UserDefaults.standard.object(forKey: "studentlast")as? [String] ?? []
+    }
+    set{
+        UserDefaults.standard.set(last , forKey: "studentlast")
+    }
+}
+
+var section : [Int] {
+    get{
+        return UserDefaults.standard.object(forKey: "studentsection")as? [Int] ?? []
+    }
+    set{
+        UserDefaults.standard.set(section , forKey: "studentsection")
+    }
+}

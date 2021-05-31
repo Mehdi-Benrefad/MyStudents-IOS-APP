@@ -12,8 +12,33 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
    
     @IBOutlet weak var studentsTableView: UITableView!
     var students = studentsInSections
-    
+    var studentsInSectionsbis : [[student]] = [[]]
     override func viewDidLoad() {
+        
+        var studentsbis1 : [student] = []
+        var studentsbis2 : [student] = []
+        var studentsbis3 : [student] = []
+        var studentsbis4 : [student] = []
+        
+        for i in 0..<first.count{
+            if(section[i] == 1){
+                studentsbis1.append(student(firstname: first[i], lastname: last[i], section: section[i]))
+            }else if(section[i] == 1){
+                studentsbis2.append(student(firstname: first[i], lastname: last[i], section: section[i]))
+            }else if(section[i] == 1){
+                studentsbis3.append(student(firstname: first[i], lastname: last[i], section: section[i]))
+            }else if(section[i] == 1){
+                studentsbis4.append(student(firstname: first[i], lastname: last[i], section: section[i]))
+            }
+        }
+        
+        
+        studentsInSectionsbis.append(studentsbis1)
+        studentsInSectionsbis.append(studentsbis2)
+        studentsInSectionsbis.append(studentsbis3)
+        studentsInSectionsbis.append(studentsbis4)
+
+        /**/
         super.viewDidLoad()
         students = studentsInSections
         studentsTableView.reloadData()
